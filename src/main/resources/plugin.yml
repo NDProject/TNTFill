@@ -1,0 +1,28 @@
+name: TNTFill
+description: TNTFill
+author: ZYSEA
+version: 2.0.1
+main: me.zysea.tntfill.FillPlugin
+softdepend:
+  - FactionsBlue
+  - Vault
+commands:
+  tntfill:
+    description: fill dispensers
+    permission: tntfill.use
+    permission-message: "Insufficient permission"
+
+permissions:
+  tntfill.all:
+    description: All tntfill permissions
+    children:
+      tntfill.use: true
+      tntfill.pay: true
+      tntfill.factions: true
+
+  tntfill.use:
+    description: use /tntfill
+  tntfill.pay:
+    description: use /tntfill <amount> pay
+  tntfill.factions:
+    description: enables faction tnt bank and /f tntfill
